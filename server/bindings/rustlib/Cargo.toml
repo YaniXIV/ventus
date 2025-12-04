@@ -1,0 +1,12 @@
+[package]
+name = "rustlib"
+version = "0.1.0"
+edition = "2024"
+
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+acir_field = { git = "https://github.com/noir-lang/noir.git", package = "acir_field" }
+bn254_blackbox_solver = { git = "https://github.com/noir-lang/noir.git", package = "bn254_blackbox_solver" }
